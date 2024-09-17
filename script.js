@@ -118,7 +118,7 @@ function rollDice() {
     }
     if (i == dice1 * dice2) {
       alert("correct!");
-    } else {
+    } else if (i != dice1 * dice2) {
       alert("wrong!");
     }
   }
