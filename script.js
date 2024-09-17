@@ -98,7 +98,7 @@ function rollDice() {
     let i = +prompt(`${dice1} * (${dice2} + ${rand}) / (${rand2} - ${dice1})`);
     if (i == (dice1 * (dice2 + rand)) / (rand2 - dice1)) {
       alert("correct!");
-    } else {
+    } else if (i != (dice1 * (dice2 + rand)) / (rand2 - dice1)){
       alert("wrong!");
     }
   } else if (selectE1.value == "roll-mini2") {
